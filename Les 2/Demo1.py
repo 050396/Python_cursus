@@ -1,9 +1,7 @@
-def hello (Ashni):
-    print('Welcome' + ' ' + (Ashni) + ' ' + 'to the world of Python')
+answers = ['Y', 'N', 'N', 'Y', 'N', 'Y', 'Y', 'Y', 'N', 'N', 'N']
+numNo = (answers.count('N'))
+print (numNo)
 
-type(4.0 // int(2 ** 2.0))
-for i in range (1, 200, 500):
-    print(i, end=' ')
 
 
 
