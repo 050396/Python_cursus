@@ -1,5 +1,6 @@
-infile = open ('Hardlopers.txt', 'w')
-infile.write('Thu 10 Mar 2016, 10:45:52, Miranda\nThu 10 Mar 2016, 10:46:04, Piet\nThu 10 Mar 2016, 10:47:27, Sacha\nThu 10 Mar 2016, 10:48:33, Karel\nThu 10 Mar 2016, 10:48:42, Kemal')
-infile.close()
+infile = open ('Hardlopers.txt', 'a')
+from datetime import datetime
+s = datetime.strftime(datetime.now(),'%a %d %b %Y %H %M %S')
 
-def strftime(tijd):
+name = input('Naam hardloper:')
+infile.write(s + ' ' + str(name) + '\n')
