@@ -1,13 +1,13 @@
 jaargetijde = int(input('De hoeveelste maand van het jaar is het?'))
-lst = [['maart, april, mei'], ['juni, juli, augustus'], ['september, oktober, november'], ['december, januari, februari']]
+maandnummer = [[3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 1, 2]]
 def seizoen (maand):
-    if lst[0:3]:
+    if maand in maandnummer [0]:
         print('Het is lente')
-    if lst[3:6]:
+    elif maand in maandnummer [1]:
         print('Het is zomer')
-    if lst[6:9]:
+    elif maand in maandnummer [2]:
         print('Het is herfst')
-    if lst[9:12]:
+    elif maand in maandnummer [3]:
         print('Het is winter')
     return jaargetijde
-seizoen (lst)
+seizoen (jaargetijde)
